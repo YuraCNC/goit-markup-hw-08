@@ -1,0 +1,27 @@
+.custom-checkbox {
+   width: 16px;
+   height: 15px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border: 2px solid var(--mine-color);
+   border-radius: 2px;
+
+   transition: var(--modal-transition);
+
+   margin-right: 7px;
+
+   .checkbox:checked + & {
+      background-color: var(--accent-color);
+      border-color: var(--accent-color);
+   }
+}
+
+.custom-checkbox-icon {
+   opacity: 0;
+   transition: var(--modal-transition);
+
+   .checkbox:checked + .custom-checkbox & {
+      opacity: 1;
+   }
+}

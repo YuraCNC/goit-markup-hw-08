@@ -1,0 +1,53 @@
+.specific {
+   padding-top: 0;
+}
+
+.specific__title {
+   margin-bottom: 50px;
+   font-weight: 700;
+   font-size: 36px;
+   line-height: 1.16;
+   text-align: center;
+   letter-spacing: 0.03em;
+   color: var(--mine-color);
+}
+
+.specific__list {
+   display: flex;
+   align-items: center;
+}
+
+.specific__item {
+   margin-right: 30px;
+
+   &:last-child {
+      margin-right: 0;
+   }
+}
+
+/* 1) обгорнув img div-ом і позиціонував відносно нього, а не самого зображення з розрахунком на те, що в майбутньому в li-шці можуть з'явитися додаткові елементи. Чи доречне таке рішення в цьому випадку?*/
+
+.specific-item__wrapper {
+   position: relative;
+   width: 370px;
+   height: 294px;
+}
+
+.specific-item__title {
+   display: flex;
+   position: absolute;
+   width: 100%;
+   height: 70px;
+   bottom: 0;
+   left: 0;
+   background-color: rgba(47, 48, 58, 0.8);
+
+   font-weight: 700;
+   font-size: 14px;
+   line-height: 1.14;
+   align-items: center;
+   justify-content: center;
+   letter-spacing: 0.03em;
+   text-transform: uppercase;
+   color: var(--the-second-color);
+}

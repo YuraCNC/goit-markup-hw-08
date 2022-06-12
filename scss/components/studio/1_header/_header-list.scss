@@ -1,0 +1,39 @@
+.header__list {
+   display: flex;
+   margin-left: auto;
+}
+
+.header__item {
+   margin-right: 50px;
+   font-weight: 500;
+   font-size: 14px;
+   line-height: 1.14;
+   letter-spacing: 0.02em;
+
+   &:last-child {
+      margin-right: 0;
+   }
+}
+
+.header__link {
+   display: flex;
+   align-items: center;
+
+   padding-top: 32px;
+   padding-bottom: 32px;
+   color: var(--second-text-color);
+
+   transition-property: color;
+   transition-duration: 250ms;
+   transition-timing-function: var(--transition-timing-function);
+
+   &:hover,
+   &:focus {
+      color: var(--accent-color);
+   }
+}
+
+.header__icon {
+   margin-right: 10px;
+   fill: currentColor;
+}

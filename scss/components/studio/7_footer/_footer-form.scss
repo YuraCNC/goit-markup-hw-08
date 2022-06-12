@@ -1,0 +1,59 @@
+.subscribe {
+   margin-left: auto;
+}
+
+.subscribe__form {
+   display: flex;
+   align-items: flex-end;
+}
+
+.subscribe__lable {
+   margin-right: 12px;
+}
+
+.subscribe__text {
+   display: block;
+   margin-bottom: 20px;
+
+   font-weight: 700;
+   font-size: 14px;
+   line-height: 16px;
+   letter-spacing: 0.03em;
+   text-transform: uppercase;
+
+   color: var(--the-second-color);
+}
+
+.subscribe__input {
+   background-color: transparent;
+   width: 358px;
+   height: 50px;
+   color: var(--the-second-color);
+   border: 1px solid rgba(255, 255, 255, 0.3);
+   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+   border-radius: 4px;
+   padding-left: 16px;
+
+   outline: transparent;
+
+   &::placeholder {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 1.25;
+      letter-spacing: 0.03em;
+      padding: 0px;
+
+      color: rgba(255, 255, 255, 0.6);
+   }
+}
+
+.subscribe__button {
+   display: flex;
+   align-items: center;
+
+   padding: 10px 29px;
+}
+
+.subscribe__icon {
+   margin-left: 12px;
+}

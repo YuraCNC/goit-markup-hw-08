@@ -1,0 +1,42 @@
+.social {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.social__item {
+   &:not(:last-child) {
+      margin-right: 10px;
+   }
+}
+
+.social__link {
+   display: flex;
+   width: 44px;
+   height: 44px;
+
+   border-radius: 50%;
+   align-items: center;
+   justify-content: center;
+
+   transition: background-color 250ms var(--transition-timing-function);
+
+   &:hover,
+   &:focus {
+      background-color: var(--accent-color);
+   }
+}
+
+.social__link--employee {
+   fill: #afb1b8;
+   background-color: var(--the-second-color);
+
+   &:hover .social__icon,
+   &:focus .social__icon {
+      fill: var(--the-second-color);
+   }
+}
+
+.social__icon {
+   transition: fill 250ms var(--transition-timing-function);
+}

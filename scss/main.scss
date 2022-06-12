@@ -1,0 +1,66 @@
+//
+// utils===========================================utils
+//
+@import './utils/fonts';
+@import './utils/variables';
+@import './utils/visually-hidden';
+@import './utils/reset';
+
+//
+// base (section-container)========================base
+//
+@import './components/base';
+
+//
+// header==========================================header
+//
+@import './components/studio/1_header/header-base';
+@import './components/studio/1_header/header-nav';
+@import './components/studio/1_header/header-list';
+
+//
+// hero============================================hero
+//
+@import './components/studio/2_hero/hero-base';
+@import './components/studio/2_hero/hero';
+@import './components/studio/2_hero/modal-windows';
+@import './components/studio/2_hero/modal-form/modal-form';
+@import './components/studio/2_hero/modal-form/checkbox';
+
+//
+//advantages=====================================advantages
+//
+@import './components/studio/3_advantages/advantages';
+
+//
+//specific========================================specific
+//
+@import './components/studio/4_specific/specific';
+
+//
+//staff===========================================staff
+//
+@import './components/studio/5_stuff/stuff';
+@import './components/studio/5_stuff/employee';
+@import './components/studio/5_stuff/social';
+
+//
+//regular-customers=================================regular-customers
+//
+@import './components/studio/6_regular-customers/regular-customers';
+
+//
+//footer===============================================footer
+//
+@import './components/studio/7_footer/footer-base';
+@import './components/studio/7_footer/footer-logo';
+@import './components/studio/7_footer/footer-contact';
+@import './components/studio/7_footer/footer-social';
+@import './components/studio/7_footer/footer-form';
+
+//
+//portfolio======================================portfolio
+//
+@import './components/portfolio/1_filters/filters';
+@import './components/portfolio/2_cards/cards';
+@import './components/portfolio/2_cards/owerlay';
