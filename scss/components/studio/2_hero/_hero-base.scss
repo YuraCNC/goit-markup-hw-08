@@ -1,14 +1,21 @@
 .hero {
-   padding: 200px 0px;
+   padding: 118px 0px;
    background-color: #c4c4c4;
    background-image: linear-gradient(
          rgba(47, 48, 58, 0.4),
          rgba(47, 48, 58, 0.4)
       ),
       url(../images/hero/Img.jpg);
+
    max-width: 1600px;
    height: auto;
    margin: 0 auto;
+
+   //decktop screen//
+   @media screen and (min-width: 1200px) {
+      padding: 200px 0px;
+      background-position: center;
+   }
 }
 
 .hero-container {

@@ -1,7 +1,14 @@
 .employee__details {
-   padding: 30px 10px;
-}
+   //mobile, tablet screen//
+   @media screen and (min-width: 480px) {
+      padding: 30px 10px 24px;
+   }
 
+   //decktop screen//
+   @media screen and (min-width: 1200px) {
+      padding: 30px 10px;
+   }
+}
 .employee__name {
    margin-bottom: 10px;
 

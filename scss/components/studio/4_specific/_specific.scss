@@ -1,5 +1,14 @@
 .specific {
-   padding-top: 0;
+   //mobile, tablet screen//
+   @media screen and(max-width: 1199px) {
+      display: none;
+   }
+
+   //decktop screen//
+   @media screen and(min-width: 1200px) {
+      display: block;
+      padding-top: 0;
+   }
 }
 
 .specific__title {
