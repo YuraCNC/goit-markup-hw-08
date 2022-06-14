@@ -1,17 +1,13 @@
 .regular-customers__title {
    font-weight: 700;
    text-align: center;
+   font-size: 28px;
+   line-height: 1.17;
    letter-spacing: 0.03em;
 
+   margin-bottom: 30px;
+
    color: var(--mine-color);
-
-   //mobile, tablet screen//
-   @media screen and (min-width: 480px) {
-      font-size: 28px;
-      line-height: 1.17;
-
-      margin-bottom: 30px;
-   }
 
    //desktop screen//
    @media screen and (min-width: 1200px) {
@@ -33,6 +29,7 @@
    display: flex;
    align-items: center;
    justify-content: center;
+
    height: 92px;
 
    fill: #afb1b8;
