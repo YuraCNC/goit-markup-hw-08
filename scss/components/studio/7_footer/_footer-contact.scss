@@ -1,12 +1,25 @@
 .footer__contact {
-   margin-right: 70px;
+   @media screen and (max-width: 1199px) {
+      margin-bottom: 60px;
+   }
+   @media screen and (min-width: 1200px) {
+      margin-right: 70px;
+   }
 }
 
 .contact__item {
-   margin-bottom: 9px;
+   margin-bottom: 8px;
 
    &:last-child {
       margin-bottom: 0;
+   }
+
+   @media screen and (min-width: 1200px) {
+      margin-bottom: 9px;
+
+      &:last-child {
+         margin-bottom: 0;
+      }
    }
 }
 

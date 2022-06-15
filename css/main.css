@@ -113,7 +113,6 @@ body {
 }
 
 .container {
-  outline: 1px solid red;
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
@@ -377,8 +376,9 @@ color: var(--main-color);}*/
 
 .modal {
   position: absolute;
-  width: 528px;
-  height: 581px;
+  padding: 40px;
+  width: 93.75%;
+  height: 609px;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%) scale(1);
@@ -391,6 +391,18 @@ color: var(--main-color);}*/
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+}
+@media screen and (min-width: 480px) {
+  .modal {
+    width: 450px;
+    height: 609px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 581px;
+  }
 }
 
 .close-modal-btn {
@@ -423,19 +435,21 @@ color: var(--main-color);}*/
   fill: var(--accent-color);
 }
 
-.modal {
-  padding: 40px;
-}
-
 .form-title {
   display: block;
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-color);
   margin-bottom: 12px;
+}
+@media screen and (min-width: 1200px) {
+  .form-title {
+    font-size: 20px;
+    line-height: 1.15;
+  }
 }
 
 .label {
@@ -555,8 +569,8 @@ color: var(--main-color);}*/
   display: -ms-flexbox;
   display: flex;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.16;
   letter-spacing: 0.03em;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -567,6 +581,12 @@ color: var(--main-color);}*/
   color: var(--second-text-color);
   margin: 20px 0 30px;
   cursor: pointer;
+}
+@media screen and (min-width: 1200px) {
+  .lable-checkbox {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .policy-link {
@@ -1002,12 +1022,31 @@ color: var(--main-color);}*/
 }
 
 .footer__wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+  position: relative;
+}
+@media screen and (max-width: 767px) {
+  .footer__wrapper {
+    display: block;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer__block-1 {
+    padding-left: 61px;
+    width: 280px;
+    text-align: center;
+  }
 }
 
 .footer__logo {
@@ -1019,15 +1058,30 @@ color: var(--main-color);}*/
   color: var(--the-second-color);
 }
 
-.footer__contact {
-  margin-right: 70px;
+@media screen and (max-width: 1199px) {
+  .footer__contact {
+    margin-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__contact {
+    margin-right: 70px;
+  }
 }
 
 .contact__item {
-  margin-bottom: 9px;
+  margin-bottom: 8px;
 }
 .contact__item:last-child {
   margin-bottom: 0;
+}
+@media screen and (min-width: 1200px) {
+  .contact__item {
+    margin-bottom: 9px;
+  }
+  .contact__item:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .contact__link {
@@ -1047,6 +1101,20 @@ color: var(--main-color);}*/
   color: var(--the-second-color);
 }
 
+@media screen and (max-width: 767px) {
+  .social-footer {
+    margin-bottom: 60px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .social-footer {
+    position: absolute;
+    top: 5px;
+    right: 89px;
+    text-align: center;
+  }
+}
+
 .social-footer__title {
   font-weight: 700;
   font-size: 14px;
@@ -1062,21 +1130,32 @@ color: var(--main-color);}*/
   background-color: rgba(255, 255, 255, 0.1);
 }
 
-.subscribe {
-  margin-left: auto;
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .subscribe {
+    text-align: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .subscribe {
+    margin-left: auto;
+  }
 }
 
-.subscribe__form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+@media screen and (min-width: 1200px) {
+  .subscribe__form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
 }
 
-.subscribe__lable {
-  margin-right: 12px;
+@media screen and (min-width: 1200px) {
+  .subscribe__lable {
+    margin-right: 12px;
+  }
 }
 
 .subscribe__text {
@@ -1142,6 +1221,19 @@ color: var(--main-color);}*/
   padding: 0px;
   color: rgba(255, 255, 255, 0.6);
 }
+@media screen and (max-width: 767px) {
+  .subscribe__input {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .subscribe__input {
+    width: 450px;
+    margin-bottom: 20px;
+  }
+}
 
 .subscribe__button {
   display: -webkit-box;
@@ -1151,6 +1243,7 @@ color: var(--main-color);}*/
       -ms-flex-align: center;
           align-items: center;
   padding: 10px 29px;
+  margin: 0 auto;
 }
 
 .subscribe__icon {
@@ -1285,9 +1378,23 @@ color: var(--main-color);}*/
 
 .wrapper {
   position: relative;
-  width: 370px;
   height: 294px;
   overflow: hidden;
+}
+@media screen and (max-width: 767px) {
+  .wrapper {
+    max-width: 450px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .wrapper {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .wrapper {
+    width: 370px;
+  }
 }
 
 .owerlay-text {
@@ -1296,7 +1403,6 @@ color: var(--main-color);}*/
   height: 100%;
   top: 0;
   left: 0;
-  padding: 63px 24px;
   font-weight: 400;
   font-size: 18px;
   line-height: 1.55;
@@ -1309,4 +1415,20 @@ color: var(--main-color);}*/
           transition-duration: 250ms;
   -webkit-transition-timing-function: var(--transition-timing-function);
           transition-timing-function: var(--transition-timing-function);
+}
+@media screen and (max-width: 767px) {
+  .owerlay-text {
+    padding: 77px 24px;
+    overflow-y: scroll;
+  }
+}
+@media screen and (min-width: 768px) {
+  .owerlay-text {
+    padding: 49px 24px 77px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .owerlay-text {
+    padding: 63px 24px;
+  }
 }/*# sourceMappingURL=main.css.map */
