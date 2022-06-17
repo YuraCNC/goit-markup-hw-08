@@ -162,8 +162,12 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 100vw;
   position: relative;
+}
+@media screen and (max-width: 767px) {
+  .header-container {
+    width: 100vw;
+  }
 }
 
 .navigation {
@@ -178,15 +182,28 @@ body {
 .logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.16;
   letter-spacing: 0.03em;
   color: var(--accent-color);
+}
+@media screen and (min-width: 1200px) {
+  .logo {
+    font-size: 26px;
+    line-height: 1.19;
+  }
 }
 
 @media screen and (max-width: 767px) {
   .navigation__logo {
-    padding: 15px 0;
+    padding: 16px 0;
+  }
+}
+@media screen and (min-width: 767px) {
+  .navigation__logo {
+    padding-top: 26px;
+    padding-bottom: 26px;
+    margin-right: 93px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -267,9 +284,6 @@ color: var(--main-color);}*/
 }
 
 .header__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   margin-left: auto;
 }
 @media screen and (max-width: 767px) {
@@ -277,16 +291,40 @@ color: var(--main-color);}*/
     display: none;
   }
 }
+@media screen and (min-width: 1200px) {
+  .header__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
 
 .header__item {
-  margin-right: 50px;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
+  font-size: 12px;
+  line-height: 1.16;
   letter-spacing: 0.02em;
+  color: var(--second-text-color);
 }
-.header__item:last-child {
-  margin-right: 0;
+@media screen and (max-width: 1199px) {
+  .header__item {
+    margin-bottom: 10px;
+  }
+  .header__item:last-child {
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header__item {
+    margin-right: 50px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+  }
+  .header__item:last-child {
+    margin-right: 0;
+  }
 }
 
 .header__link {
@@ -296,18 +334,18 @@ color: var(--main-color);}*/
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 32px;
-  padding-bottom: 32px;
   color: var(--second-text-color);
-  -webkit-transition-property: color;
-  transition-property: color;
-  -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
-  -webkit-transition-timing-function: var(--transition-timing-function);
-          transition-timing-function: var(--transition-timing-function);
+  -webkit-transition: 250ms var(--transition-timing-function);
+  transition: 250ms var(--transition-timing-function);
 }
 .header__link:hover, .header__link:focus {
   color: var(--accent-color);
+}
+@media screen and (min-width: 1200px) {
+  .header__link {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
 }
 
 .header__icon {
@@ -351,8 +389,15 @@ color: var(--main-color);}*/
     background-color: var(--the-second-color);
     top: 0;
     left: 0;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     padding: 48px 40px;
     -webkit-transform: translateX(0);
             transform: translateX(0);
@@ -372,6 +417,10 @@ color: var(--main-color);}*/
     -webkit-transform: translateX(-100%);
             transform: translateX(-100%);
   }
+}
+
+.mobile-menu-nav {
+  margin-bottom: auto;
 }
 
 .mobile-nav__item {
@@ -394,16 +443,22 @@ color: var(--main-color);}*/
 }
 
 .mobile-menu__list {
-  position: absolute;
-  left: 40px;
-  bottom: 134px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 64px;
 }
 
 .mobile-menu__social {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  position: absolute;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   left: 40px;
   bottom: 48px;
 }
