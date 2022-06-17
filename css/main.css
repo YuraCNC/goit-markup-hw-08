@@ -398,10 +398,9 @@ color: var(--main-color);}*/
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    overflow-y: scroll;
     padding: 48px 40px;
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
     z-index: 999;
     -webkit-transition: 250ms var(--transition-timing-function);
     transition: 250ms var(--transition-timing-function);
@@ -415,8 +414,9 @@ color: var(--main-color);}*/
 
 @media screen and (max-width: 767px) {
   .menu-container.is-open {
-    -webkit-transform: translateX(-100%);
-            transform: translateX(-100%);
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    overflow-y: scroll;
   }
 }
 

@@ -39,10 +39,8 @@
       display: flex;
       flex-direction: column;
 
-      overflow-y: scroll;
-
       padding: 48px 40px;
-      transform: translateX(0);
+      transform: translateX(-100%);
       z-index: 999;
       transition: 250ms var(--transition-timing-function);
    }
@@ -53,7 +51,8 @@
 
 .menu-container.is-open {
    @media screen and (max-width: 767px) {
-      transform: translateX(-100%);
+      transform: translateX(-50%);
+      overflow-y: scroll;
    }
 }
 
