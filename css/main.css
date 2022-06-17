@@ -414,8 +414,8 @@ color: var(--main-color);}*/
 
 @media screen and (max-width: 767px) {
   .menu-container.is-open {
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
     overflow-y: scroll;
   }
 }
@@ -1339,7 +1339,12 @@ color: var(--main-color);}*/
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .subscribe {
-    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1373,10 +1378,14 @@ color: var(--main-color);}*/
   line-height: 16px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  text-align: center;
   color: var(--the-second-color);
 }
 
 .subscribe__input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   background-color: transparent;
   width: 358px;
   height: 50px;

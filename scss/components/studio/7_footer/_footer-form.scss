@@ -1,6 +1,7 @@
 .subscribe {
    @media screen and (min-width: 768px) and (max-width: 1199px) {
-      text-align: center;
+      display: flex;
+      justify-content: center;
    }
    @media screen and (min-width: 1200px) {
       margin-left: auto;
@@ -29,11 +30,13 @@
    line-height: 16px;
    letter-spacing: 0.03em;
    text-transform: uppercase;
+   text-align: center;
 
    color: var(--the-second-color);
 }
 
 .subscribe__input {
+   display: flex;
    background-color: transparent;
    width: 358px;
    height: 50px;
