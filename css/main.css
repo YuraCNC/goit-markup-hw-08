@@ -416,7 +416,7 @@ color: var(--main-color);}*/
   .menu-container.is-open {
     -webkit-transform: translateX(0);
             transform: translateX(0);
-    overflow-y: scroll;
+    overflow: scroll;
   }
 }
 
@@ -426,9 +426,6 @@ color: var(--main-color);}*/
 
 .mobile-nav__item {
   margin-bottom: 32px;
-}
-.mobile-nav__item:last-child {
-  margin-bottom: 0;
 }
 
 .mobile-nav__link {

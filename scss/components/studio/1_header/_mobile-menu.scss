@@ -52,7 +52,7 @@
 .menu-container.is-open {
    @media screen and (max-width: 767px) {
       transform: translateX(0);
-      overflow-y: scroll;
+      overflow: scroll;
    }
 }
 
@@ -62,9 +62,9 @@
 
 .mobile-nav__item {
    margin-bottom: 32px;
-   &:last-child {
-      margin-bottom: 0;
-   }
+   // &:last-child {
+   //    margin-bottom: 0;
+   // }
 }
 
 .mobile-nav__link {
