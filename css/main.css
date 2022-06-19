@@ -676,7 +676,7 @@ color: var(--main-color);}*/
   .modal {
     width: 528px;
     height: 581px;
-    overflow-y: auto;
+    overflow: hidden;
   }
 }
 
