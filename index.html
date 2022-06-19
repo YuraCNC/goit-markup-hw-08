@@ -299,10 +299,15 @@
                      <div class="specific-item__wrapper">
                         <img
                            class="specific-item__img"
-                           src="./images/about/img.jpg"
+                           srcset="
+                              ./images/about/specific_desktop.jpg    1x,
+                              ./images/about/specific_desktop@2x.jpg 2x
+                           "
+                           src="./images/about/specific_desktop.jpg"
                            alt="обучение с помощью планшета и компьютера"
                            width="370"
                            height="294"
+                           loading="lazy"
                         />
                         <p class="specific-item__title">
                            Десктопные приложения
@@ -313,10 +318,15 @@
                      <div class="specific-item__wrapper">
                         <img
                            class="specific-item__img"
-                           src="./images/about/img-1.jpg"
+                           srcset="
+                              ./images/about/specific-1_desktop.jpg    1x,
+                              ./images/about/specific-1_desktop@2x.jpg 2x
+                           "
+                           src="./images/about/specific-1_desktop.jpg"
                            alt="обучение с помощью телефона и ноутбука"
                            width="370"
                            height="294"
+                           loading="lazy"
                         />
                         <p class="specific-item__title">Мобильные приложения</p>
                      </div>
@@ -325,10 +335,15 @@
                      <div class="specific-item__wrapper">
                         <img
                            class="specific-item__img"
-                           src="./images/about/img-2.jpg"
+                           srcset="
+                              ./images/about/specific-2_desktop.jpg    1x,
+                              ./images/about/specific-2_desktop@2x.jpg 2x
+                           "
+                           src="./images/about/specific-2_desktop.jpg"
                            alt="обучение работы с цветовой палитрой на планшете"
                            width="370"
                            height="294"
+                           loading="lazy"
                         />
                         <p class="specific-item__title">Дизайнерские решения</p>
                      </div>
@@ -344,12 +359,33 @@
                <h2 class="stuff__title">Наша команда</h2>
                <ul class="stuff__list list">
                   <li class="stuff__item employee">
+                     <!-- <img
+                        class="employee__img"
+                        srcset="
+                           ./images/team/employee-1_mobile.jpg    1x,
+                           ./images/team/employee-1_mobile@2x.jpg 2x
+                        "
+                        src="./images/team/employee-1_mobile.jpg"
+                        alt="портрет члена команды"
+                        width="450"
+                        height="460"
+                     /> -->
                      <img
                         class="employee__img"
-                        src="./images/team/img.jpg"
+                        srcset="
+                           ./images/team/w/employee-1_270.jpg 270w,
+                           ./images/team/w/employee-1_354.jpg 354w,
+                           ./images/team/w/employee-1_450.jpg 450w,
+                           ./images/team/w/employee-1_540.jpg 540w,
+                           ./images/team/w/employee-1_708.jpg 708w,
+                           ./images/team/w/employee-1_900.jpg 900w
+                        "
+                        sizes="(min-width: 1200) 270px, (min-width: 768) 354px, (max-width: 767) 450px, 100vw"
+                        src="./images/team/w/employee-1_450.jpg"
                         alt="портрет члена команды"
-                        width="270"
-                        height="260"
+                        width="450"
+                        height="460"
+                        loading="lazy"
                      />
                      <div class="employee__details">
                         <h3 class="employee__name">Игорь Демьяненко</h3>
@@ -433,12 +469,32 @@
                      </div>
                   </li>
                   <li class="stuff__item">
+                     <!-- <img
+                        class="employee__img"
+                        srcset="
+                           ./images/team/employee-2_mobile.jpg    1x,
+                           ./images/team/employee-2_mobile@2x.jpg 2x
+                        "
+                        src="./images/team/employee-2_mobile.jpg"
+                        alt="портрет члена команды"
+                        width="450"
+                        height="460"
+                     /> -->
                      <img
                         class="employee__img"
-                        src="./images/team/img-1.jpg"
+                        srcset="
+                           ./images/team/w/employee-2_270.jpg 270w,
+                           ./images/team/w/employee-2_354.jpg 354w,
+                           ./images/team/w/employee-2_450.jpg 450w,
+                           ./images/team/w/employee-2_540.jpg 540w,
+                           ./images/team/w/employee-2_708.jpg 708w,
+                           ./images/team/w/employee-2_900.jpg 900w
+                        "
+                        src="./images/team/w/employee-2_540.jpg"
                         alt="портрет члена команды"
-                        width="270"
-                        height="260"
+                        width="450"
+                        height="460"
+                        loading="lazy"
                      />
                      <div class="employee__details">
                         <h3 class="employee__name">Ольга Репина</h3>
@@ -522,12 +578,32 @@
                      </div>
                   </li>
                   <li class="stuff__item">
+                     <!-- <img
+                        class="employee__img"
+                        srcset="
+                           ./images/team/employee-3_mobile.jpg    1x,
+                           ./images/team/employee-3_mobile@2x.jpg 2x
+                        "
+                        src="./images/team/employee-3_mobile.jpg"
+                        alt="портрет члена команды"
+                        width="450"
+                        height="460"
+                     /> -->
                      <img
                         class="employee__img"
-                        src="./images/team/img-2.jpg"
+                        srcset="
+                           ./images/team/w/employee-3_270.jpg 270w,
+                           ./images/team/w/employee-3_354.jpg 354w,
+                           ./images/team/w/employee-3_450.jpg 450w,
+                           ./images/team/w/employee-3_540.jpg 540w,
+                           ./images/team/w/employee-3_708.jpg 708w,
+                           ./images/team/w/employee-3_900.jpg 900w
+                        "
+                        src="./images/team/w/employee-1_540.jpg"
                         alt="портрет члена команды"
-                        width="270"
-                        height="260"
+                        width="450"
+                        height="460"
+                        loading="lazy"
                      />
                      <div class="employee__details">
                         <h3 class="employee__name">Николай Тарасов</h3>
@@ -609,12 +685,32 @@
                      </div>
                   </li>
                   <li class="stuff__item">
+                     <!-- <img
+                        class="employee__img"
+                        srcset="
+                           ./images/team/employee-4_mobile.jpg    1x,
+                           ./images/team/employee-4_mobile@2x.jpg 2x
+                        "
+                        src="./images/team/employee-4_mobile.jpg"
+                        alt="портрет члена команды"
+                        width="450"
+                        height="460"
+                     /> -->
                      <img
                         class="employee__img"
-                        src="./images/team/img-3.jpg"
+                        srcset="
+                           ./images/team/w/employee-4_270.jpg 270w,
+                           ./images/team/w/employee-4_354.jpg 354w,
+                           ./images/team/w/employee-4_450.jpg 450w,
+                           ./images/team/w/employee-4_540.jpg 540w,
+                           ./images/team/w/employee-4_708.jpg 708w,
+                           ./images/team/w/employee-4_900.jpg 900w
+                        "
+                        src="./images/team/w/employee-1_540.jpg"
                         alt="портрет члена команды"
-                        width="270"
-                        height="260"
+                        width="450"
+                        height="460"
+                        loading="lazy"
                      />
                      <div class="employee__details">
                         <h3 class="employee__name">Михаил Ермаков</h3>

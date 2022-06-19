@@ -52,7 +52,7 @@
 .menu-container.is-open {
    @media screen and (max-width: 767px) {
       transform: translateX(0);
-      overflow: scroll;
+      overflow-y: scroll;
    }
 }
 
