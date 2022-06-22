@@ -1653,6 +1653,9 @@ color: var(--main-color);}*/
   -webkit-transform: translateY(0);
           transform: translateY(0);
 }
+.link-card:hover .text-card, .link-card:focus .text-card {
+  border-bottom: transparent;
+}
 
 .text-card {
   padding: 20px 25px;
@@ -1666,9 +1669,6 @@ color: var(--main-color);}*/
         -ms-flex-positive: 1;
             flex-grow: 1;
   }
-}
-.text-card:hover, .text-card:focus {
-  border-bottom: transparent;
 }
 
 .title-picture {

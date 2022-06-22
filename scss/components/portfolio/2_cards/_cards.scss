@@ -44,6 +44,11 @@
    &:focus .owerlay-text {
       transform: translateY(0);
    }
+
+   &:hover .text-card,
+   &:focus .text-card {
+      border-bottom: transparent;
+   }
 }
 
 .text-card {
@@ -54,11 +59,6 @@
    border-bottom: 1px solid #f6f6f6;
    @media screen and (min-width: 768px) and (max-width: 1199px) {
       flex-grow: 1;
-   }
-
-   &:hover,
-   &:focus {
-      border-bottom: transparent;
    }
 }
 
