@@ -38,6 +38,7 @@
       display: block;
       box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
          0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+      height: 100%;
    }
    &:hover .owerlay-text,
    &:focus .owerlay-text {
@@ -53,6 +54,11 @@
    border-bottom: 1px solid #f6f6f6;
    @media screen and (min-width: 768px) and (max-width: 1199px) {
       flex-grow: 1;
+   }
+
+   &:hover,
+   &:focus {
+      border-bottom: transparent;
    }
 }
 
